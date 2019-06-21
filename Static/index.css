@@ -5,8 +5,60 @@ html{
 body{
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background: url("img/Promo ulu.png") no-repeat right top;
+  background-size: 65vh;
 }
 
 .navbar{
-  background-color: transparent;
+  background: transparent;
+}
+
+.logo{
+  width: 60px;
+}
+
+.nav-link{
+  color: #191919 !important;
+  margin-right: 30px;
+  line-height: 2.5em;
+  font-weight: 300;
+}
+
+.btn{
+  border-radius: 50px;
+  background: linear-gradient(#B830D8, #612EB9);
+  border-color: none;
+  box-shadow: 0 0 2px #E00BE8;
+  color: white;
+  height: 55px;
+  display: inline-block;
+}
+
+.btn:hover{
+  color: white;
+}
+
+.purple{
+  color: #B830D8;
+}
+
+.center{
+  height: 500px;
+  position: relative;
+}
+
+.vertical-center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar-toggler-icon{
+  color: black;
+}
+
+.spacing{
+  padding: 0 5px 0 5px;
 }
