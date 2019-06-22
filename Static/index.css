@@ -6,15 +6,11 @@ body{
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: url("img/Promo ulu.png") no-repeat right top;
-  background-size: 65vh;
+  background-size: 70vh;
 }
 
 .navbar{
   background: transparent;
-}
-
-.logo{
-  width: 60px;
 }
 
 .nav-link{
@@ -43,7 +39,7 @@ body{
 }
 
 .center{
-  height: 500px;
+  height: 700px;
   position: relative;
 }
 
@@ -60,5 +56,53 @@ body{
 }
 
 .spacing{
-  padding: 0 5px 0 5px;
+  padding: 0 5px 10px 5px;
+}
+
+.section{
+  height: 100vh;
+}
+
+.card{
+  box-shadow: 0 3px 5px 0 #D3D3D3;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.white{
+  height: 3px;
+  color: white;
+  background-color: white;
+  border: none;
+}
+
+.footer-link{
+  color: #A7A7A7;
+}
+
+.footer-link:hover{
+  color: white;
+}
+
+.footer{
+  background-color: #191919;
+  padding-top: 40px;
+}
+
+.logo-footer{
+  width: 150px;
+  height: auto;
+}
+
+.fixed-top.scrolled {
+  background-color: #191919 !important;
+  transition: background-color 200ms linear;
+}
+
+.nav-link.scrolled {
+  color: white !important;
+}
+
+.logo{
+  width: 60px;
 }
