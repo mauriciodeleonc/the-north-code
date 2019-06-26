@@ -130,7 +130,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1500">
+        <div class="col-lg-5 text-on-right" data-aos="fade-left" data-aos-duration="1500">
           <h3 class="purple">Our Services.</h3>
           <h2><b>Only the best. For the best.</b></h2>
           <p>
@@ -199,6 +199,23 @@
           console.log($navLink.scrollTop() + " " + $nav.height());
         });
       });
+
+        (function($) {
+          var $window = $(window),
+              $right = $('.text-on-right');
+
+          function resize() {
+              if ($window.width() < 975) {
+                  return $right.addClass('order-first');
+              }
+
+              $right.removeClass('order-first');
+          }
+
+          $window
+              .resize(resize)
+              .trigger('resize');
+      })(jQuery);
     </script>
     <script>
       AOS.init();
