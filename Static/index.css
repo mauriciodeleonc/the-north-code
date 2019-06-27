@@ -9,6 +9,14 @@ body{
   background-size: 70vh;
 }
 
+#portfoliobg{
+  position: absolute;
+  left: 66.6%;
+  top: 190%;
+  z-index: 99;
+  width: 450px;
+}
+
 .navbar{
   background: transparent;
 }
@@ -64,9 +72,17 @@ body{
 }
 
 .card{
-  box-shadow: 0 3px 5px 0 #D3D3D3;
   border-radius: 10px;
   border-style: none;
+  height: 150px;
+  box-shadow: none;
+  transition: all .3s ease-in-out;
+}
+
+.card:hover{
+  box-shadow: 0 3px 5px 0 rgba(46,61,73,0.30);
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .white{
@@ -76,8 +92,14 @@ body{
   border: none;
 }
 
+.shadowed{
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
 .footer-link{
   color: #A7A7A7;
+  margin-bottom: 10px;
 }
 
 .footer-link:hover{
@@ -86,7 +108,7 @@ body{
 
 .footer{
   background-color: #191919;
-  padding-top: 40px;
+  padding: 40px 0 40px 0;
 }
 
 .logo-footer{
@@ -105,4 +127,39 @@ body{
 
 .logo{
   width: 60px;
+}
+
+.logo.scrolled{
+  background-image: url('img/logowhite.svg') !important;
+  width: 60px;
+}
+
+#films{
+  background-color: #191919;
+  color: white;
+}
+
+#films-logo{
+  max-width: 130px;
+}
+
+.card-text{
+  margin: 0 !important;
+}
+
+.empresa{
+  height: 120px;
+}
+
+.logo-card{
+  height: 200px !important;
+}box-shadow: 0 3px 5px 0 rgba(46,61,73,0.15);
+}
+
+.push{
+  padding-top: 80px;
+}
+
+.footer-section{
+  margin-bottom: 30px;
 }
