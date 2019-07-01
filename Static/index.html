@@ -14,7 +14,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#Home"><img class="logo" alt="The North Code" src="img/logo.svg"></img></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Us</a>
             </li>
-            <button type="button" class="btn" href="#contact">Contact Us!</button>
+            <li class="nav-item">
+              <button type="button" class="btn btn-menu" href="#contact">Contact Us!</button>
+            </li>
           </ul>
         </div>
       </div>
@@ -62,7 +64,7 @@
         <div class="center">
           <div class="row justify-content-between vertical-center">
             <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500">
-              <div class="row justify-content-between">
+              <div class="row no-gutters justify-content-between">
                 <div class="col-4 spacing">
                   <div class="card d-flex">
                     <div class="card-body align-items-center d-flex justify-content-center">
@@ -85,7 +87,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row justify-content-between">
+              <div class="row no-gutters justify-content-between">
                 <div class="col-4 spacing">
                   <div class="card d-flex">
                     <div class="card-body align-items-center d-flex justify-content-center">
@@ -108,7 +110,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row justify-content-between">
+              <div class="row no-gutters justify-content-between">
                 <div class="col-4 spacing">
                   <div class="card d-flex">
                     <div class="card-body align-items-center d-flex justify-content-center">
@@ -127,7 +129,6 @@
                   <div class="card d-flex" id="films">
                     <div class="card-body align-items-center d-flex justify-content-center">
                       <p class="card-text text-center">Video Ads powered by <img class="text-center" src="img/the33films.png" id=films-logo></img></p>
-
                     </div>
                   </div>
                 </div>
@@ -147,10 +148,9 @@
         </div>
       </div>
       <div class="section" id="portfolio">
-        <img id="portfoliobg" src="img/dorsialaptop.svg"></img>
         <div class="center">
           <div class="vertical-center">
-            <div class="row">
+            <div class="row justify-content-between">
               <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1500">
                 <h3 class="purple">Our Portfolio.</h3>
                 <h2><b>Proud of working with the best. You.</b></h2>
@@ -158,6 +158,9 @@
                   Our clients are at the core of what we do, that's why we're more than excited to get to know you, your company and all the ideas you want to create.
                 </p>
                 <button type="button" class="btn" href="#contact">See all of our projects!</button>
+              </div>
+              <div class="col-lg-4" data-aos="fade-left" data-aos-duration="1500">
+                <img id="portfoliobg" src="img/dorsia.png"></img>
               </div>
             </div>
             <div class="row" data-aos="fade-up" data-aos-duration="1500" style="padding-top: 60px;">
@@ -206,6 +209,46 @@
                 We're software consulting company based in Monterrey Mexico, looking forward to help you and your company with all the digital solutions it needs.
               </p>
               <button type="button" class="btn" href="#contact">Work with us!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="contact">
+        <div class="center">
+          <div class="row vertical-center justify-content-between">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500">
+              <h3 class="purple">Contact Us.</h3>
+              <h2><b>We'd love to work with you.</b></h2>
+              <form>
+                <div class="form-group">
+                  <label for="name">How should we address to you? (Your name)</label>
+                  <input type="text" class="form-control" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="email">Where should we reach back to you? (Email)</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="phone">In case we cant find you with your Email. (Phone)</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="description">Tell us a bit about your project</label>
+                  <textarea class="form-control" id="description" rows="3" placeholder="Tell us about your project"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit message!</button>
+              </form>
+            </div>
+            <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1500">
+              <div class="card blackbg">
+                <div class="card-body" style="padding-bottom: 20px;">
+                  <h5 class="card-title">Office hours.</h5>
+                  <hr class="white">
+                  <p class="card-text" style="color: #A7A7A7;">Our office hours are Monday to Friday from 9:00 a.m. to 5:00 p.m.<br>That's when we'll be most likely to reach back to you.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -276,7 +319,7 @@
               <div class="col">
                 <a class="footer-link" href="#home">hola@thenorthcode.com</a>
                 <br>
-                <a class="footer-link" href="#home">(+52) 811 790 2707</a>
+                <a class="footer-link" href="#home">(+52) 811 790 <2707></2707></a>
               </div>
             </div>
           </div>

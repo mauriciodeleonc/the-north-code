@@ -10,11 +10,9 @@ body{
 }
 
 #portfoliobg{
-  position: absolute;
-  left: 66.6%;
-  top: 190%;
-  z-index: 99;
-  width: 450px;
+  width: 100%;
+  box-shadow: 0 5px 5px 0 rgba(46,61,73,0.30);
+  border-radius: 5px;
 }
 
 .navbar{
@@ -36,6 +34,8 @@ body{
   color: white;
   height: 55px;
   display: inline-block;
+  border-style: none;
+  padding: 0 30px;
 }
 
 .btn:hover{
@@ -64,11 +64,11 @@ body{
 }
 
 .spacing{
-  padding: 0 5px 10px 5px;
+  margin: 10px 0 !important;
 }
 
 .section{
-  height: 100vh;
+  height: 90vh;
 }
 
 .card{
@@ -77,6 +77,7 @@ body{
   height: 150px;
   box-shadow: none;
   transition: all .3s ease-in-out;
+  margin: 2px 10px;
 }
 
 .card:hover{
@@ -93,8 +94,8 @@ body{
 }
 
 .shadowed{
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(46,61,73,0.30));
+  filter: drop-shadow(5px 5px 5px rgba(46,61,73,0.30));
 }
 
 .footer-link{
@@ -153,7 +154,6 @@ body{
 
 .logo-card{
   height: 200px !important;
-}box-shadow: 0 3px 5px 0 rgba(46,61,73,0.15);
 }
 
 .push{
@@ -162,4 +162,43 @@ body{
 
 .footer-section{
   margin-bottom: 30px;
+}
+
+.blackbg{
+  background-color: #191919;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(46,61,73,0.5);
+  height: 200px !important;
+}
+
+.blackbg:hover{
+  transform: none;
+  box-shadow: 0 10px 20px 0 rgba(46,61,73,0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    height: 100vh !important;
+    padding: 5% 0;
+  }
+  .nav-link{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+
+  }
+  .navbar-nav{
+    padding: 10% 0;
+  }
+  .btn-menu{
+    width: max-content;
+    padding-top: 10px !important;
+    display: block;
+  }
+  .navbar{
+    background-color: white;
+  }
 }
