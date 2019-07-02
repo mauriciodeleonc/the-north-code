@@ -6,7 +6,7 @@ body{
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: url("img/Promo ulu.png") no-repeat right top;
-  background-size: 70vh;
+  background-size: 68vh;
 }
 
 #portfoliobg{
@@ -47,7 +47,7 @@ body{
 }
 
 .center{
-  height: 700px;
+  height: 100vh;
   position: relative;
 }
 
@@ -63,13 +63,14 @@ body{
   color: black;
 }
 
-.spacing{
+/*.spacing{
   margin: 10px 0 !important;
 }
 
 .section{
-  height: 90vh;
-}
+  height: 100vh;
+  margin-bottom: 80px;
+}*/
 
 .card{
   border-radius: 10px;
@@ -126,12 +127,11 @@ body{
   color: white !important;
 }
 
-.logo{
-  width: 60px;
+.logo.scrolled{
+  fill: white;
 }
 
-.logo.scrolled{
-  background-image: url('img/logowhite.svg') !important;
+.logo{
   width: 60px;
 }
 
@@ -195,10 +195,12 @@ body{
   }
   .btn-menu{
     width: max-content;
-    padding-top: 10px !important;
-    display: block;
+    margin-top: 10px !important;
   }
   .navbar{
     background-color: white;
-  }
+  }/*
+  .section{
+    margin: 40px 0;
+  }*/
 }
