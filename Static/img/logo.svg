@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="81" viewBox="0 0 76 81">
+  <defs>
+    <clipPath id="clip-Logo">
+      <rect width="76" height="81"/>
+    </clipPath>
+  </defs>
+  <g id="Logo" clip-path="url(#clip-Logo)">
+    <text id="the_north_code" data-name="the north 
+code" transform="translate(0 26)" fill="#191919" font-size="25" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">the </tspan><tspan x="0" y="23">north </tspan><tspan x="0" y="46">code</tspan></text>
+  </g>
+</svg>

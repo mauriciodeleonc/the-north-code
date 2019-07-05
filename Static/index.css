@@ -1,0 +1,258 @@
+html{
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url("img/Promo ulu.png") no-repeat right top;
+  background-size: 68vh;
+}
+
+#portfoliobg{
+  width: 100%;
+  box-shadow: 0 5px 5px 0 rgba(46,61,73,0.30);
+  border-radius: 5px;
+}
+
+.navbar{
+  background: transparent;
+}
+
+.nav-link{
+  color: #191919 !important;
+  margin-right: 30px;
+  line-height: 2.5em;
+  font-weight: 300;
+}
+
+.btn{
+  border-radius: 50px;
+  background: linear-gradient(#B830D8, #612EB9);
+  border-color: none;
+  box-shadow: 0 0 2px #E00BE8;
+  color: white;
+  height: 55px;
+  display: inline-block;
+  border-style: none;
+  padding: 0 30px;
+  line-height: 3.5rem;
+}
+
+.btn:hover{
+  color: white;
+}
+
+.purple{
+  color: #B830D8;
+}
+
+.center{
+  height: 100vh;
+  position: relative;
+}
+
+.vertical-center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar-toggler-icon{
+  color: black;
+}
+
+/*.spacing{
+  margin: 10px 0 !important;
+}
+
+.section{
+  height: 100vh;
+  margin-bottom: 80px;
+}*/
+
+.card{
+  border-radius: 10px;
+  border-style: none;
+  min-height: 150px;
+  box-shadow: none;
+  transition: all .3s ease-in-out;
+  margin: 2px 10px;
+}
+
+.card:hover{
+  box-shadow: 0 3px 5px 0 rgba(46,61,73,0.30);
+  transform: scale(1.02);
+  z-index: 1;
+}
+
+.white{
+  height: 3px;
+  color: white;
+  background-color: white;
+  border: none;
+}
+
+.shadowed{
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(46,61,73,0.30));
+  filter: drop-shadow(5px 5px 5px rgba(46,61,73,0.30));
+}
+
+.footer-link{
+  color: #A7A7A7;
+}
+
+.footer-link:hover{
+  color: white;
+}
+
+.footer{
+  background-color: #191919;
+  padding: 40px 0 10px 0;
+}
+
+.footer-row{
+  margin: 0 !important;
+}
+
+.logo-footer{
+  width: 150px;
+  height: auto;
+}
+
+.fixed-top.scrolled {
+  background-color: #191919 !important;
+  transition: background-color 200ms linear;
+}
+
+.nav-link.scrolled {
+  color: white !important;
+}
+
+.logo.scrolled{
+  fill: white;
+}
+
+.logo{
+  width: 60px;
+}
+
+#films{
+  background-color: #191919;
+  color: white;
+}
+
+#films-logo{
+  max-width: 130px;
+}
+
+.card-text{
+  margin: 0 !important;
+}
+
+.empresa{
+  max-width:  100%;
+}
+
+.logo-card{
+  height: 100% !important;
+}
+
+.push{
+  padding-top: 80px;
+}
+
+.footer-section{
+  margin-bottom: 20px;
+  margin-top: 10px !important;
+}
+
+.blackbg{
+  background-color: #191919;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(46,61,73,0.5);
+  height: 200px !important;
+}
+
+.blackbg:hover{
+  transform: none;
+  box-shadow: 0 10px 20px 0 rgba(46,61,73,0.5);
+}
+
+.row{
+  margin: 30px 0;
+}
+
+hr{
+  margin: 0 !important;
+}
+
+.up{
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-collapse {
+    height: 100vh !important;
+    padding: 5% 0;
+  }
+  .nav-link{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+
+  }
+  .navbar-nav{
+    padding: 10% 0;
+  }
+  .btn-menu{
+    width: max-content;
+    margin-top: 10px !important;
+  }
+  .navbar{
+    background-color: white;
+  }
+  #films-logo{
+    max-width: 100px;
+  }
+  .mobile{
+    display: none;
+  }
+  body{
+    background: none;
+  }
+  .center{
+    height: 75vh;
+    position: relative;
+  }
+  .vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/*@media only screen and (min-width: 768px){
+  body{
+    background-size: 40vh;
+  }
+  .center{
+    height: 55vh;
+    position: relative;
+  }
+  .vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}*/
