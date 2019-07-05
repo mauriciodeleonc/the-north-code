@@ -1,37 +1,46 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#191919">
-  <meta name="title" content="The North Code | Web Design and Development.">
+
+  <meta name="title" content="The North Code | The Best of You. Online.">
   <meta name="description"
-    content="Grow your business, increase sales, get more leads through Email Marketing campaigns, SEO Optimization and ECommerce Stores.">
-  <meta itemprop="name" content="The North Code | Web Design and Develpoment.">
+    content="We're a software consulting company based in Monterrey, México looking forward to help you and your company with all the digital solutions it needs.">
+
+  <meta itemprop="name" content="The North Code | The Best of You. Online.">
   <meta itemprop="description"
-    content="Grow your business, increase sales, get more leads through Email Marketing campaigns, SEO Optimization and ECommerce Stores.">
+    content="We're a software consulting company based in Monterrey, México looking forward to help you and your company with all the digital solutions it needs.">
   <meta itemprop="image" content="https://thenorthcode.com/assets/img/revenue.svg">
+
   <meta property="og:url" content="https://thenorthcode.com">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="The North Code | Web Design and Development.">
+  <meta property="og:title" content="The North Code | The Best of You. Online.">
   <meta property="og:description"
-    content="Grow your business, increase sales, get more leads through Email Marketing campaigns, SEO Optimization and ECommerce Stores.">
+    content="We're a software consulting company based in Monterrey, México looking forward to help you and your company with all the digital solutions it needs.">
   <meta property="og:image" content="https://thenorthcode.com/assets/img/revenue.svg">
-  <meta property="og:image:alt" content="Increase sales and customers with the power of the web">
+  <meta property="og:image:alt" content="The Best of You. Online.">
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The North Code | Web Design and Development.">
+  <meta name="twitter:title" content="The North Code | The Best of You. Online.">
   <meta name="twitter:description"
-    content="Grow your business, increase sales, get more leads through Email Marketing campaigns, SEO Optimization and ECommerce Stores.">
+    content="We're a software consulting company based in Monterrey, México looking forward to help you and your company with all the digital solutions it needs.">
   <meta name="twitter:image" content="https://thenorthcode.com/assets/img/revenue.svg">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>The North Code</title>
+  <link rel="shortcut icon" href="./img/favicon.ico">
+
+  <title>The North Code | The Best of You. Online.</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131687312-1"></script>
@@ -45,7 +54,6 @@
 </head>
 
 <body>
-
   <nav class="navbar navbar-light navbar-expand-md fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#home">
@@ -257,7 +265,7 @@
         <div class="col-lg-6 up" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
           <h3 class="purple">Contact Us.</h3>
           <h2><b>We'd love to work with you.</b></h2>
-          <form>
+          <form id="form">
             <div class="form-group">
               <label for="name">How should we address to you? (Your name)</label>
               <input type="text" class="form-control" id="name" placeholder="Name" required>
@@ -274,18 +282,24 @@
             </div>
             <div class="form-group">
               <label for="description">Tell us a bit about your project</label>
-              <textarea class="form-control" id="description" rows="3"
+              <textarea class="form-control" id="message" rows="3"
                 placeholder="Tell us about your project"></textarea>
             </div>
             <button type="submit" class="btn">Submit message!</button>
           </form>
+          <div class="mt-3 alert alert-success" role="alert" id="success" style="display: none">
+            Message sent! Thank You
+          </div>
+          <div class="mt-3 alert alert-warning" role="alert" id="error" style="display: none">
+            There was an error sending your message. Please try again.
+          </div>
         </div>
         <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
           <div class="card blackbg">
             <div class="card-body" style="padding-bottom: 20px;">
               <h5 class="card-title">Office hours.</h5>
               <hr class="white">
-              <p class="card-text" style="color: #A7A7A7;">Our office hours are Monday to Friday from 9:00 a.m. to 5:00
+              <p class="card-text" style="color: #A7A7A7;">Monday to Friday from 9:00 a.m. to 5:00
                 p.m.<br>That's when we'll be most likely to reach back to you.</p>
             </div>
           </div>
@@ -310,52 +324,41 @@
               <br>
               <a class="footer-link" href="#us">Us</a>
             </div>
-            <div class="col-md-6 col-6">
+            <div class="col-md-6 col-4">
+              <!--
               <a class="footer-link" href="#shop">Shop</a>
-              <br>
-              <a class="footer-link" href="#blog">Blog</a>
+              <br>-->
+              <a class="footer-link" href="https://blog.thenorthcode.com" target="_blank">Blog</a>
+              <!---<br>
+              <a class="footer-link" href="https://courses.thenorthcode.com">Courses</a>
               <br>
               <a class="footer-link" href="#learn">Learn</a>
-              <br>
+              <br>-->
             </div>
           </div>
           <h5 class="text-white"><b>Follow Us</b></h5>
           <hr class="white">
           <div class="row no-gutters footer-section">
             <div class="col-6">
-              <a class="footer-link" href="facebook.com/thenorthcode">Facebook</a>
+              <a class="footer-link" href="https://facebook.com/thenorthcode" target="_blank">Facebook</a>
               <br>
-              <a class="footer-link" href="instagram.com/thenorthcodemx">Instagram</a>
+              <a class="footer-link" href="https://instagram.com/thenorthcodemx" target="_blank">Instagram</a>
             </div>
           </div>
         </div>
         <div class="col-sm-4 col-6">
-          <h5 class="text-white"><b>Visit us</b></h5>
-          <hr class="white">
-          <div class="row no-gutters footer-section">
-            <div class="col">
-              <a class="footer-link" href="#home">Río Tamazunchale 404, Calzada del Valle. San Pedro Garza García. N.L.
-                Mexico</a>
-            </div>
-          </div>
-          <h5 class="text-white"><b>Work with us</b></h5>
-          <hr class="white">
-          <div class="row no-gutters footer-section">
-            <div class="col-6">
-              <a class="footer-link" href="#home">Careers</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-12">
           <h5 class="text-white"><b>Contact us</b></h5>
           <hr class="white">
           <div class="row no-gutters footer-section">
             <div class="col-sm-12 col-12">
-              <a class="footer-link" href="#home">hola@thenorthcode.com</a>
+              <a class="footer-link" href="mailto:hola@thenorthcode.com" target="_blank">hola@thenorthcode.com</a>
               <br>
-              <a class="footer-link" href="#home">(+52) 811 790 2707</a>
+              <a class="footer-link" href="https://wa.me/5218117902707" target="_blank">
+                <i class="fab fa-whatsapp"></i> (+52 1) 811 790 2707</a>
             </div>
           </div>
+        </div>
+        <div class="col-sm-4 col-12">
         </div>
       </div>
       <div class="row footer-row no-gutters justify-content-center">
@@ -378,10 +381,30 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
   <!-- Optional JavaScript -->
   <script>
     $(function () {
       $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        var $navbar = $('.navbar');
+        var $navLink = $(".nav-link");
+        var $logo = $(".logo");
+
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        $navLink.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        $logo.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+        if ($logo.hasClass('scrolled')) {
+          $navbar.addClass('navbar-dark');
+          $navbar.removeClass('navbar-light');
+        } else {
+          $navbar.removeClass('navbar-dark');
+          $navbar.addClass('navbar-light');
+        }
+      });
+
+      $(document).ready(function () {
         var $nav = $(".fixed-top");
         var $navbar = $('.navbar');
         var $navLink = $(".nav-link");
@@ -427,6 +450,30 @@
   </script>
   <script>
     AOS.init({ disable: 'mobile' });
+  </script>
+  <script>
+    $("#form").submit(e => {
+      e.preventDefault();
+      const name = $("#name").val();
+      const email = $("#email").val();
+      const phone = $("#phone").val();
+      const message = $("#message").val();
+
+      axios.post("/send", {
+        name: name,
+        email: email,
+        phone: phone,
+        message: message
+      })
+        .then(response => {
+          if(response.status === 200) {
+            $("#success").css("display", "block");
+          }
+        })
+        .catch(error => {
+            $("#error").css("display", "block");
+        });
+    });
   </script>
 </body>
 
