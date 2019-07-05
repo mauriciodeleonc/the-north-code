@@ -41,6 +41,10 @@ app.post("/send", (req, res) => {
             res.send('ok');
         }
     })
+});
+
+app.use((req, res) => {
+    res.sendFile(path.join(__dirname+"/index.html"));
 })
 
 app.listen(3000, () => console.log("running"));
