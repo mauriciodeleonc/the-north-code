@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 mailer.extend(app, {
-    from: "hello@thenorthcode.com",
+    from: "hola@thenorthcode.com",
     host: 'thenorthcode.com', // hostname
     secureConnection: true, // use SSL
     port: 465, // port for secure SMTP
@@ -33,6 +33,12 @@ app.post("/send", (req, res) => {
             res.status(500).send("Error sending email");
         } else {
             res.send('ok');
+            app.mailer.send("thankyou", {
+                to: req.body.email,
+                subject: `Thanks for Contacting us ${req.body.name}!`,
+            }, (err, message) => {
+                if(err) console.log(err);
+            });
         }
     })
 });
